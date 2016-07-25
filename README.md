@@ -1,6 +1,8 @@
 Game Of Life - Kata
 ===================
 
+Fernando Portilla
+
 General installation instructions:
 
 Install build essentials:
