@@ -79,10 +79,11 @@ angular.module('Game_of_life')
         kataCopy[line][column] = status;
       });
     });
-
-    return kataCopy; 
+    $scope.kata = kataCopy;
+    return $scope.kata; 
   };
 
+  $scope.buildKata();
 
 })
 .config(function ($routeProvider) {

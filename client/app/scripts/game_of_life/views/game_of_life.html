@@ -2,12 +2,13 @@
 <div>Controller status: {{ controller_loaded || 'not loaded!' }}</div>
 
 <h1> Result </h1>
-<table>
-  <tbody>
-    <tr ng-repeat="item in kata">
-      <td> {{ item }} </td>
-    </tr>
-  </tbody>
-</table>
+
+<div ng-repeat="row in kata">
+  <span class="span" ng-class="{ 'liveCell': column} "  ng-repeat="column in row track by $index">
+    {{ column }}
+  </span>
+</div>
+
+<button type="button" ng-click="startIteration()" >Start</button>
 
 <div><br><a href="#/">Home</a></div>
